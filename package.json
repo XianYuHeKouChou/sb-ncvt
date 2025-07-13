@@ -12,7 +12,9 @@
     "lint": "eslint vue-project --fix"
   },
   "dependencies": {
+    "@element-plus/icons-vue": "^2.3.1",
     "@tailwindcss/vite": "^4.1.11",
+    "axios": "^1.10.0",
     "element-plus": "^2.10.4",
     "pinia": "^3.0.3",
     "tailwindcss": "^4.1.11",
