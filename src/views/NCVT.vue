@@ -14,11 +14,11 @@
     </el-card>
     <el-card>
       <h4>netlify节点地址：</h4>
-      <el-link type="primary" href="netlify.xianyuhekouchou.tech" target="_blank">netlify.xianyuhekouchou.tech</el-link>
+      <el-link type="primary" href="https://netlify.xianyuhekouchou.tech" target="_blank">https://netlify.xianyuhekouchou.tech</el-link>
     </el-card>
     <el-card>
       <h4>EdgeOne节点地址：</h4>
-      <el-link type="primary" href="edgeone.xianyuhekouchou.tech" target="_blank">edgeone.xianyuhekouchou.tech</el-link>
+      <el-link type="primary" href="https://edgeone.xianyuhekouchou.tech" target="_blank">https://edgeone.xianyuhekouchou.tech</el-link>
     </el-card>
   </div>
   <div class="p-5 flex justify-around">
