@@ -4,10 +4,10 @@
       <Header/>
     </el-header>
     <el-container>
-      <el-aside class="w-auto">
+      <el-aside style="width: auto">
         <Aside/>
       </el-aside>
-      <el-main>
+      <el-main style="padding: 0">
         <RouterView/>
       </el-main>
     </el-container>
@@ -18,9 +18,3 @@
 import Header from '@/components/Header.vue';
 import Aside from '@/components/Aside.vue';
 </script>
-
-<style scoped>
-.el-aside {
-  width: auto;
-}
-</style>

@@ -2,19 +2,6 @@ import {ElMessage, ElNotification} from 'element-plus';
 import axios from 'axios';
 import type {AxiosResponse} from 'axios';
 
-// export type utilsType = {
-//   host: string;
-//   successMessage: (msg: string) => void;
-//   failMessage: (msg: string) => void;
-//   successNotification: (msg: string) => void;
-//   failNotification: (msg: string) => void;
-//   setLocalStorage: (key: string, value: any) => void;
-//   getLocalStorage: (key: string) => unknown;
-//   convertToUTC8: (timeString: string) => string;
-//   httpGetNoToken: (url: string) => Promise<AxiosResponse>;
-//   httpPostNoToken: (url: string, data: object) => Promise<AxiosResponse>;
-// };
-
 export default {
   // 请求主机
   host: 'http://192.168.3.213:1337',

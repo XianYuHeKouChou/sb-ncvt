@@ -4,7 +4,8 @@ import utils from "@/assets/utils.ts";
 export const useAppStore = defineStore('appStore', {
   state: () => {
     return {
-      appIsDark: null as boolean | string | null,
+      systemTheme: null as null | string,
+      heatherIconColor: '#ffffff' as string,
       mediaChange: null as any,
       asideIsCollapse: false as boolean,
     }
@@ -13,58 +14,59 @@ export const useAppStore = defineStore('appStore', {
     /**
      * 获取当前颜色模式
      */
-    getDarkMode() {
-      const value = utils.getLocalStorage('appIsDark')
-      if (typeof value === 'boolean') {
-        this.appIsDark = value;
-      }
+    getSystemTheme() {
+      const value = utils.getLocalStorage('systemTheme')
       if (typeof value === 'string') {
-        this.appIsDark = value
+        this.systemTheme = value
       }
-      if (value === null || value === undefined || value === 'system') {
-        this.appIsDark = 'system'
-        this.systemThemeListener()
+      if (value === null || value === undefined) {
+        this.systemTheme = 'system'
+        utils.setLocalStorage('systemTheme', this.systemTheme)
       }
-      this.toggleDarkMode()
+      this.changeSystemTheme()
     },
     /**
      * 系统主题监听
      */
     systemThemeListener() {
-      if (this.appIsDark === 'system') {
-        const mediaQuery = window.matchMedia('(prefers-color-scheme: dark)')
-        this.mediaChange = () => this.toggleDarkMode()
+      const mediaQuery = window.matchMedia('(prefers-color-scheme: dark)')
+      if (this.systemTheme === 'system') {
+        this.mediaChange = () => this.changeSystemTheme()
         mediaQuery.addEventListener('change', this.mediaChange)
       } else {
-        const mediaQuery = window.matchMedia('(prefers-color-scheme: dark)')
         mediaQuery.removeEventListener('change', this.mediaChange)
       }
     },
     /**
-     * 切换颜色模式
+     * 修改颜色模式
      */
-    toggleDarkMode() {
-      if (this.appIsDark === true) {
+    changeSystemTheme() {
+      if (this.systemTheme === 'dark') {
         document.documentElement.classList.add('dark')
+        this.heatherIconColor = '#ffffff'
       }
-      if (this.appIsDark === false) {
+      if (this.systemTheme === 'light') {
         document.documentElement.classList.remove('dark')
+        this.heatherIconColor = '#505050'
       }
-      if (this.appIsDark === 'system') {
+      if (this.systemTheme === 'system') {
         if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) {
           document.documentElement.classList.add('dark')
+          this.heatherIconColor = '#ffffff'
         } else {
           document.documentElement.classList.remove('dark')
+          this.heatherIconColor = '#505050'
         }
       }
     },
     /**
      * 给外部的切换颜色模式
+     * @param value {string} - 'system' | 'dark' | 'light'
      */
-    changeDarkMode(value: boolean | string) {
-      this.appIsDark = value
-      utils.setLocalStorage('appIsDark', value)
-      this.toggleDarkMode()
+    changeDarkMode(value: string) {
+      this.systemTheme = value
+      utils.setLocalStorage('systemTheme', value)
+      this.changeSystemTheme()
       this.systemThemeListener()
     }
   }

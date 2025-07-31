@@ -6,6 +6,3 @@
       p-id="1256"></path>
   </svg>
 </template>
-
-<script setup lang="ts">
-</script>
