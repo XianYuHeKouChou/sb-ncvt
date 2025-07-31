@@ -1,5 +1,27 @@
 <template>
   <div class="p-5 flex justify-around">
+    <el-card>
+      <h4>脚本安装地址：</h4>
+      <el-link type="primary" href="https://scriptcat.org/zh-CN/script-show-page/3915" target="_blank">https://scriptcat.org/zh-CN/script-show-page/3915</el-link>
+    </el-card>
+    <el-card>
+      <h4>网站源码github地址：</h4>
+      <el-link type="primary" href="https://github.com/XianYuHeKouChou/sb-ncvt" target="_blank">https://github.com/XianYuHeKouChou/sb-ncvt</el-link>
+    </el-card>
+    <el-card>
+      <h4>脚本源码github地址：</h4>
+      <el-link type="primary" href="https://github.com/XianYuHeKouChou/JB-NCVT" target="_blank">https://github.com/XianYuHeKouChou/JB-NCVT</el-link>
+    </el-card>
+    <el-card>
+      <h4>netlify节点地址：</h4>
+      <el-link type="primary" href="netlify.xianyuhekouchou.tech" target="_blank">netlify.xianyuhekouchou.tech</el-link>
+    </el-card>
+    <el-card>
+      <h4>EdgeOne节点地址：</h4>
+      <el-link type="primary" href="edgeone.xianyuhekouchou.tech" target="_blank">edgeone.xianyuhekouchou.tech</el-link>
+    </el-card>
+  </div>
+  <div class="p-5 flex justify-around">
     <el-card class="max-w-96">
       <template #header>
         <div class="flex flex-col">
