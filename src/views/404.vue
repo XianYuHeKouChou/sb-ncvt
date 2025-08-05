@@ -11,3 +11,7 @@
     </el-result>
   </div>
 </template>
+
+<script lang="ts" setup>
+import { ElResult, ElButton } from 'element-plus';
+</script>

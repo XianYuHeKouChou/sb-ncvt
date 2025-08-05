@@ -190,6 +190,7 @@
 </template>
 
 <script setup lang="ts">
+import { ElCard, ElLink, ElTag, ElTimeline, ElTimelineItem, ElImage } from 'element-plus'
 function getImagePath(fileName: string): string {
   return new URL(`../static/ncvt/${fileName}`, import.meta.url).href
 }

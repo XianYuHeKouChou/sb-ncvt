@@ -49,6 +49,7 @@
 </template>
 
 <script setup lang="ts">
+import {ElMenu, ElIcon, ElDropdown, ElDropdownMenu, ElDropdownItem, ElText} from 'element-plus';
 import LightIcon from '@/components/LightIcon.vue';
 import DarkIcon from '@/components/DarkIcon.vue';
 import SystemIcon from '@/components/SystemIcon.vue';

@@ -4,6 +4,7 @@ import 'nprogress/nprogress.css';
 import Scriptcat from "@/views/Scriptcat.vue";
 import OCS from "@/views/OCS.vue";
 import NCVT from "@/views/NCVT.vue";
+import PutDemand from "@/views/PutDemand.vue";
 import NotFound from "@/views/404.vue";
 
 const routes = [
@@ -11,6 +12,7 @@ const routes = [
   {path: "/scriptcat", component: Scriptcat},
   {path: "/ocs", component: OCS},
   {path: "/ncvt", component: NCVT},
+  {path: "/demand", component: PutDemand},
   {path: "/404", component: NotFound},
   {path: "/:pathMatch(.*)*", redirect: "/404"}
 ]

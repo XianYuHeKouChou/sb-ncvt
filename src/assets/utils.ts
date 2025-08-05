@@ -4,7 +4,7 @@ import type {AxiosResponse} from 'axios';
 
 export default {
   // 请求主机
-  host: 'http://192.168.3.213:1337',
+  host: 'https://strapi.xianyuhekouchou.tech',
   /**
    * 成功 Message 提示
    * @param msg 提示信息

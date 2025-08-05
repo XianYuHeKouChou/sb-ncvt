@@ -18,10 +18,17 @@
       </el-icon>
       <span>NCVT Beta</span>
     </el-menu-item>
+    <el-menu-item index="demand">
+      <el-icon>
+        <img src="@/static/ncvt.jpg" alt="NCVT Beta" class="rounded-full">
+      </el-icon>
+      <span>需求墙</span>
+    </el-menu-item>
   </el-menu>
 </template>
 
 <script setup lang="ts">
+import {ElMenu, ElMenuItem, ElIcon} from "element-plus";
 import {useAppStore} from '@/stores/counter.ts'
 
 const appStore = useAppStore()

@@ -2,11 +2,9 @@ import { createApp } from 'vue'
 import App from './App.vue'
 const app = createApp(App)
 
-// 引入Element Plus
-import ElementPlus from 'element-plus'
+// 引入Element Plus styles
 import 'element-plus/dist/index.css'
 import 'element-plus/theme-chalk/dark/css-vars.css'
-app.use(ElementPlus)
 
 // 引入全局状态管理器pinia
 import { createPinia } from 'pinia'

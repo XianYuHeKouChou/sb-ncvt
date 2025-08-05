@@ -8,6 +8,7 @@ export const useAppStore = defineStore('appStore', {
       heatherIconColor: '#ffffff' as string,
       mediaChange: null as any,
       asideIsCollapse: false as boolean,
+      appLoading: false as boolean,
     }
   },
   actions: {
