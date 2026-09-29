@@ -14,11 +14,7 @@
     </el-card>
     <el-card>
       <h4>netlify节点地址：</h4>
-      <el-link type="primary" href="https://netlify.xianyuhekouchou.tech" target="_blank">netlify.xianyuhekouchou.tech</el-link>
-    </el-card>
-    <el-card>
-      <h4>EdgeOne节点地址：</h4>
-      <el-link type="primary" href="https://edgeone.xianyuhekouchou.tech" target="_blank">edgeone.xianyuhekouchou.tech</el-link>
+      <el-link type="primary" href="https://xianyuhekouchou.netlify.app" target="_blank">xianyuhekouchou.netlify.app</el-link>
     </el-card>
   </div>
   <div class="p-5 flex justify-around">
@@ -163,7 +159,7 @@
         <el-timeline-item timestamp="step1" placement="top">
           <el-card>
             <h4>点击下方链接打开智汇南职网页版：</h4>
-            <el-link type="primary" href="https://bigdata.nncvt.edu.cn/h5" target="_blank">https://bigdata.nncvt.edu.cn/h5</el-link>
+            <el-link type="primary" href="https://mobile.nnvtu.edu.cn/h5" target="_blank">https://mobile.nnvtu.edu.cn/h5</el-link>
           </el-card>
         </el-timeline-item>
         <el-timeline-item timestamp="step2" placement="top">
